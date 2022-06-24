@@ -1,0 +1,4 @@
+Selling Product 1 to 0 customers
+Selling Product 2 to 0 customers
+Selling Product 3 to 45 customers
+Selling Product 4 to 5 customers

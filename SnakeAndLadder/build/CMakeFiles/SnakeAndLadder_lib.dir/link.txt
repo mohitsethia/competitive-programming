@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libSnakeAndLadder_lib.a CMakeFiles/SnakeAndLadder_lib.dir/src/SnakeAndLadder.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libSnakeAndLadder_lib.a

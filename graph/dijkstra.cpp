@@ -1,0 +1,70 @@
+#include<iostream>
+#include<queue>
+#include<list>
+#include<set>
+#include<map>
+#include<unordered_map>
+#include<vector>
+using namespace std;
+template<typename T>
+class graph{
+    unordered_map<T, list<pair<T, int> > > m;
+public:
+    void addEdge(T u, T v, int dist, bool bidir = true){
+        m[u].push_back(make_pair(v, dist));
+        if(bidir){  
+            m[v].push_back(make_pair(u, dist));
+        }
+    }
+    void printAdj(){
+        for(auto j:m){
+            cout << j.first << "->";
+            for(auto l :j.second){
+                cout << "(" << l.first << ", " << l.second << ") ";
+            }
+            cout << endl;
+        }
+    }
+    void dijkstra(T src){
+        unordered_map<T, int> dist;
+        for(auto j : m){
+            dist[j.first] = INT_MAX;
+        }
+        set<pair<int, T> > s;
+        dist[src] = 0;
+        s.insert(make_pair(0, src));
+        while(!s.empty()){
+            auto p = *(s.begin());
+            T node = p.second;
+            int nodedist = p.first;
+            s.erase(s.begin());
+            for(auto childpair:m[node]){
+                if(nodedist + childpair.second < dist[childpair.first]){
+                    T dest = childpair.first;
+                    auto f = s.find(make_pair(dist[dest], dest));
+                    if(f != s.end()){
+                        s.erase(f);
+                    }
+                    dist[dest] = nodedist + childpair.second;
+                    s.insert(make_pair(dist[dest], dest));
+                }
+            }
+        }
+        for(auto d:dist){
+            cout << d.first << " is located at distance of " << d.second << endl;
+        }
+    }
+};
+int main(){
+    graph<string> india;
+    india.addEdge("Amritsar", "Delhi", 1);
+    india.addEdge("Amritsar", "Jaipur", 4);
+    india.addEdge("Jaipur", "Delhi", 2);
+    india.addEdge("Jaipur", "Mumbai", 8);
+    india.addEdge("Bhopal", "Agra", 2);
+    india.addEdge("Mumbai", "Bhopal", 3);
+    india.addEdge("Agra", "Delhi", 1);
+    india.printAdj();
+    india.dijkstra("Amritsar");
+    return 0;
+}

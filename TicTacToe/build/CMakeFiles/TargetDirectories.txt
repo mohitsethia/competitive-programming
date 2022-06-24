@@ -1,0 +1,4 @@
+/Users/sumitsethia/Desktop/codes/TicTacToe/build/CMakeFiles/TicTacToe_lib.dir
+/Users/sumitsethia/Desktop/codes/TicTacToe/build/CMakeFiles/TicTacToe.dir
+/Users/sumitsethia/Desktop/codes/TicTacToe/build/CMakeFiles/edit_cache.dir
+/Users/sumitsethia/Desktop/codes/TicTacToe/build/CMakeFiles/rebuild_cache.dir

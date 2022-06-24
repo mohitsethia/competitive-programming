@@ -1,0 +1,26 @@
+
+
+C syntax (for, while, if else etc)
+Input/ Output (accepting various types of input strings delimited by space and new lines etc. Usage of getChar(), getLine(), scanf etc should be very clear). [Is scanf/printf a function, if so how are they implemented. What do they accept as input arguments and what are their return types?]
+Functions [Why write function at all? What is a function stack? Can we have two functions with the same name? What are Recursive functions?]
+Array [Starting to think in terms of memory representations. Become Curious as how things really work out in practice? How are things laid out in memory. You will get to learn in Operating System. I'll refer some very good courses on Computer Architecture and Operating System]
+String Manipulation (write all string library functions) [Check out all string functions available in C++ string library]
+[https://www.programiz.com/c-programming/string-handling-functions]
+Pointer [Wtf!! How is it internally handled? What does a pointer even mean?]
+References [Not available in C, available in C++. You can ignore it for now.]
+Struct [Very important. You will get to learn classes and object later in C++]
+Stack [Simple but highly used. Can you convert a recursive program to non recursive program?]
+Queue [HIghly used data structure in practice. You should be really comfortable in implementing stacks and queues using both array as well as linked List]
+Linked List [Having a strong hold on link list will separate you from the rest. Linked List is also heavily used in industry.]
+Hashing
+Tree [Very broad topic and perhaps this is most important data structure]
+Heap
+Map
+Graph
+
+
+Algorithms
+
+Sorting (Insertion sort, Bubble Sort, Quick Sort, Merge Sort, Heap Sort) [Mixed sorting strategies. Sort functions are in built available in almost all the programming languages? Which sort function do they use? Time Complexity proof. Can you rewrite this sorting algorithms using linked lists?]
+Searching (Linear Search, Binary Search etc)
+

@@ -1,0 +1,4 @@
+/Users/sumitsethia/Desktop/codes/SnakeAndLadder/build/CMakeFiles/SnakeAndLadder_lib.dir
+/Users/sumitsethia/Desktop/codes/SnakeAndLadder/build/CMakeFiles/SnakeAndLadder.dir
+/Users/sumitsethia/Desktop/codes/SnakeAndLadder/build/CMakeFiles/edit_cache.dir
+/Users/sumitsethia/Desktop/codes/SnakeAndLadder/build/CMakeFiles/rebuild_cache.dir
